@@ -27,21 +27,37 @@
   </head>
 
   <body>
-   <div class="container" style="margin-top: 5rem;">
+   <div class="container my-5" style="margin-top: 5rem;">
     <div class="row">
       <div class="col-md-8 mx-auto">
           <img src="img/bolty-logo.png" alt="bolty" width="128">
 
           <div class="card card-body mt-5 shadow">
-            <h3 class="fw-bold text-success">Added to the waitlist successfully</h3>
-            <p class="mb-4 mt-4">Thank you for showing interest on Bolty. If you have any queries, suggestions, ideas, please reach out to us at 9963017273. Or write to support@bolty.in</p>
+            <h3 class="fw-bold text-success">Submitted successfully</h3>
+            <p class="mb-4 mt-4">Thank you for telling us your opinion. If you have any queries, suggestions, ideas, please reach out to us at 9963017273. Or write to support@bolty.in</p>
 
             <a href="https://api.whatsapp.com/send/?phone=919963017273">Click here to message us on WhatsApp.</a>
           </div>
+      </div>
+    </div>
 
-          <p class="mt-4 mb-0">Want to involve in our community?</p>
-          <a href="https://chat.whatsapp.com/EhnC2nuKQzF7xwukstfngh" class="btn btn-primary">Join our WhatsApp Group</a>
+    <div class="row mt-5">
+      <div class="col-md-4 mx-auto text-center">
+        <img src="img/good-mood.png" alt="good" width="128">
 
+        <h5>Join our waitlist to get early-access benefits.</h5>
+
+        <form name="contact" method="POST" data-netlify="true" class="mt-3 card card-body p-4" action="/success">
+          <div class="mb-3">
+            <label for="phone" class="form-label">Your Phone Number</label>
+            <input required type="text" class="form-control" id="phone" name="phone">
+          </div>
+
+          <button type="submit" class="btn btn-primary mt-4 mb-3 w-100">Join Waitlist</button>
+        </form>
+
+        <p class="mt-4 mb-0">Want to involve in our community?</p>
+        <a href="https://chat.whatsapp.com/EhnC2nuKQzF7xwukstfngh" class="btn btn-success">Join our WhatsApp Group</a>
       </div>
     </div>
    </div>

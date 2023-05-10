@@ -22,17 +22,21 @@
   <style>
     body {
       font-family: 'Rubik', sans-serif;
-      background-color: #fcf3ff;
+      /* background-color: #fcf3ff; */
     }
-
-    /* 
-      body { 
-        background: url(img/car-garage.jpg) no-repeat center center fixed; 
+    
+    @media (min-width: 768px) { 
+      #chassis { 
+        background: url(img/back.svg) no-repeat center center fixed; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-      } */
+      }
+     }
+
+    
+     
   </style>
 
   <meta name="facebook-domain-verification" content="99q9np7s5yooun6mszxh1zn9bzfdhc" />
@@ -69,15 +73,54 @@
 <!-- End Meta Pixel Code -->
 
 <body>
-  <div class="container my-5">
+  <div id="chassis">
+    <div class="container" style="padding: 5rem 0rem;">
+      <div class="row">
+        <div class="col-sm-12 col-md-8 d-flex align-items-center mb-4">
+          <div>
+            <div class="">
+              <h3 class="mt-3 display-6">Don't stress about your car maintenance. Switch to</h3>
+              <img src="img/bolty-f2.png" alt="bolty" width="512" class="img-fluid">
+
+              <div class="mt-4">
+                <a class="text-decoration-none" href="#content">How Bolty works <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 d-flex align-items-center">
+          <div class="card border-0">
+            <div class="card-header bg-dark text-white p-5">
+              <h5 class="text-center mb-0">Sign up Today to get early access benefits.</h5>
+            </div>
+            <form name="interest" method="POST" data-netlify="true" class="mt-3 card-body p-4" action="/success">
+  
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input required type="text" class="form-control" id="name" name="name">
+              </div>
+  
+              <div class="mb-3">
+                <label for="email-phone" class="form-label">Email Or Phone Number</label>
+                <input required type="text" class="form-control" id="email-phone" name="email-phone">
+              </div>
+    
+              <div class="mb-3">
+                <label for="area_city" class="form-label">Area & City</label>
+                <input required type="text" class="form-control" id="area_city" name="area_city">
+              </div>
+    
+              <button type="submit" class="btn btn-primary mt-4 mb-3 w-100">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-5" id="content">
     <div class="row">
       <div class="col-md-10 mx-auto rounded">
-        <div class="text-center">
-          <h3 class="mt-3" style="font-size: 50px;">Don't stress about your car maintenance. Switch to</h3>
-          <img src="img/bolty-f2.png" alt="bolty" width="512" class="img-fluid">
-        </div>
-
-
         <div class="text-center" style="margin-top: 6rem;">
           <h3 class="mt-5 mb-0">You can get your car's</h3>
           <h3 class="my-0">regular and periodic maintenance services</h3>
@@ -133,43 +176,10 @@
         </div>
       </div>
     </div>
-
-    <div class="row">
-      <div class="col-md-4 mx-auto">
-        <div class="text-center mt-5">
-          <h5 class="fw-bold">Tell us what do you feel about this service!</h5>
-        </div>
-
-        <form name="interest" method="POST" data-netlify="true" class="mt-3 card card-body p-4" action="/success">
-          <div class="mb-3">
-            <label for="name" class="form-label">Name</label>
-            <input required type="text" class="form-control" id="name" name="name">
-          </div>
-
-          <div class="mb-3">
-            <label for="area_city" class="form-label">Area & City</label>
-            <input required type="text" class="form-control" id="area_city" name="area_city">
-          </div>
-
-          <p>Select your opinion</p>
-          <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-            <input required type="radio" class="btn-check" name="is-interested" value="i want" id="interested1"
-              autocomplete="off">
-            <label class="btn btn-outline-success" for="interested1">I want this service</label>
-
-            <input required type="radio" class="btn-check" name="is-interested" value="i do not want" id="interested2"
-              autocomplete="off">
-            <label class="btn btn-outline-danger" for="interested2">I do not want this service</label>
-          </div>
-
-          <button type="submit" class="btn btn-primary mt-4 mb-3 w-100">Submit</button>
-        </form>
-      </div>
-    </div>
   </div>
 
-  <div class="container my-5 d-none d-md-block">
-    <div class="row">
+  <div class="container my-5">
+    <div class="row d-none d-md-block">
       <div class="col-md-12">
         <h5 class="text-center fw-bold">Watch video to know about Bolty.</h5>
         <div class="mt-5">
@@ -177,6 +187,17 @@
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="row d-block d-md-none">
+      <div class="col-12 text-center">
+        <div class="card card-body text-center shadow">
+          <h5 class="text-center fw-bold">Watch video to know about Bolty. Click the icon below</h5>
+          <a href="https://www.youtube.com/watch?v=idSCCOZqlXA">
+            <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 24 24" style="fill: rgba(241, 8, 8, 1);transform: scaleY(-1);msFilter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);"><path d="M21.593 7.203a2.506 2.506 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.515 2.515 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831zM9.996 15.005l.005-6 5.207 3.005-5.212 2.995z"></path></svg>
+          </a>
         </div>
       </div>
     </div>

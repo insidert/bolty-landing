@@ -1,224 +1,300 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bolty</title>
-  <meta name="description"
-    content="Get car service at your convenient time. A hassle-free experience so that you can stop worrying about maintenance delays.">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
-  <style>
-    body {
-      font-family: 'Rubik', sans-serif;
-      /* background-color: #fcf3ff; */
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%2342439f' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
-    }
-    
-    @media (min-width: 768px) { 
-      #chassis { 
-        background: url(img/back.svg) no-repeat center center fixed; 
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bolty</title>
+    <meta name="description"
+      content="Get car service at your convenient time. A hassle-free experience so that you can stop worrying about maintenance delays.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <style>
+      body {
+        font-family: 'Rubik', sans-serif;
+        /* background-color: #fcf3ff; */
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%2342439f' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
       }
-     }
-  </style>
 
-  <meta name="facebook-domain-verification" content="99q9np7s5yooun6mszxh1zn9bzfdhc" />
-</head>
+      @media (min-width: 768px) {
+        #chassis {
+          background: url(img/back.svg) no-repeat center center fixed;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+        }
+      }
+    </style>
+  </head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-B578MGMVW5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-B578MGMVW5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-B578MGMVW5');
-</script>
+    gtag('config', 'G-B578MGMVW5');
+  </script>
 
-<!-- Meta Pixel Code -->
-<script>
-  !function (f, b, e, v, n, t, s) {
-    if (f.fbq) return; n = f.fbq = function () {
-      n.callMethod ?
-      n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-    };
-    if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-    n.queue = []; t = b.createElement(e); t.async = !0;
-    t.src = v; s = b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t, s)
-  }(window, document, 'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '3220886614827551');
-  fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=3220886614827551&ev=PageView&noscript=1" /></noscript>
-<!-- End Meta Pixel Code -->
-
-<body>
-  <div id="chassis">
-    <div class="container" style="padding-top: 5rem; padding-bottom: 5rem;">
+  <body>
+    <div class="container mt-5">
       <div class="row">
-        <div class="col-sm-12 col-md-8 d-flex align-items-center mb-4">
-          <div>
-            <div class="">
-              <h5>Hello Hyderabad!</h5>
-              <h3 class="mt-3 display-6">Don't stress about your car maintenance. Switch to</h3>
-              <img src="img/bolty-f2.png" alt="bolty" width="512" class="img-fluid mt-3">
-
-              <div class="mt-4">
-                <a class="text-decoration-none" href="#content-make">How Bolty works 
-                  <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg></span></a>
-              </div>
+        <div class="col">
+          <nav class="navbar navbar-expand-lg rounded p-4" style="background-color: #ff8d31" data-bs-theme="light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="/">BOLTY</a>
+              <a class="btn btn-dark" href="#">Book Services</a>
             </div>
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-4 d-flex align-items-center">
-          <div class="card border-0 shadow">
-            <div class="card-header text-white border border-white p-5" style="background-color: #FD7E14;">
-              <h5 class="text-center mb-0">Sign up Today to get early access benefits.</h5>
-            </div>
-            <form name="interest" method="POST" data-netlify="true" class="mt-3 card-body p-4" action="/success">
-  
-              <div class="mb-3">
-                <label for="name" class="form-label">Name</label>
-                <input required type="text" class="form-control" id="name" name="name">
-              </div>
-  
-              <div class="mb-3">
-                <label for="email-phone" class="form-label">Email Or Phone Number</label>
-                <input required type="text" class="form-control" id="email-phone" name="email-phone">
-              </div>
-    
-              <div class="mb-3">
-                <label for="area_city" class="form-label">Area</label>
-                <input required type="text" class="form-control" id="area_city" name="area_city">
-              </div>
-    
-              <button type="submit" class="btn btn-primary mt-4 mb-3 w-100">Submit</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container mb-5" id="content-make">
-    <div class="row">
-      <div class="col-md-10 mx-auto rounded">
-        <div class="text-center" style="margin-top: 2rem; margin-bottom: 6rem;">
-          <h3 class="mt-5 mb-0">You can get your car's</h3>
-          <h3 class="my-0">regular and periodic maintenance services</h3>
-          <h3 class="mt-0">in just <strong>2 easy steps</strong>.</h3>
-        </div>
-
-        <div class="row mt-5">
-          <div class="col-sm-12 col-md-6">
-            <div class="card card-body shadow bg-white p-5">
-              <img src="img/booking.png" alt="booking" width="62">
-              <h4 class="mt-3">Book service provider of your choice based on reviews & ratings.</h4>
-
-              <div class="mt-3">
-                <span class="badge bg-dark float-end">1</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6">
-            <div class="card card-body shadow bg-white p-5">
-              <img src="img/schedule.png" alt="booking" width="62">
-              <h4 class="mt-3">Select your convenient time and confirm the booking. Sit back and relax.</h4>
-
-              <div class="mt-3">
-                <span class="badge bg-dark float-end">2</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="text-center mt-5">
-          <h5 class="fw-bold">Bolty takes care of the rest</h5>
-        </div>
-
-        <div class="row mt-5">
-          <div class="col-sm-12 col-md-4">
-            <div class="card card-body shadow bg-white p-5">
-              <img src="img/place.png" alt="booking" width="62">
-              <h4 class="mt-3">We pick your car at your door step.</h4>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-4">
-            <div class="card card-body shadow bg-white p-5">
-              <img src="img/service.png" alt="booking" width="62">
-              <h4 class="mt-3">We get it serviced.</h4>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-4">
-            <div class="card card-body shadow bg-white p-5">
-              <img src="img/home-delivery.png" alt="booking" width="62">
-              <h4 class="mt-3">We deliver it back to your home.</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container my-5">
-    <div class="row d-none d-md-block">
-      <div class="col-md-12">
-        <h5 class="text-center fw-bold">Watch video to know about Bolty.</h5>
-        <div class="mt-5">
-          <iframe width="100%" height="628" src="https://www.youtube.com/embed/idSCCOZqlXA" title="Bolty"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
+          </nav>
         </div>
       </div>
     </div>
 
-    <div class="row d-block d-md-none">
-      <div class="col-12 text-center">
-        <div class="card card-body text-center shadow">
-          <h5 class="text-center fw-bold">Watch video to know about Bolty. Click the icon below</h5>
-          <a href="https://www.youtube.com/watch?v=idSCCOZqlXA">
-            <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 24 24" style="fill: rgba(241, 8, 8, 1);transform: scaleY(-1);msFilter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);"><path d="M21.593 7.203a2.506 2.506 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.515 2.515 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831zM9.996 15.005l.005-6 5.207 3.005-5.212 2.995z"></path></svg>
-          </a>
+    <div class="container" style="margin-top: 8rem; margin-bottom: 8rem;">
+      <div class="row">
+        <div class="col-md-8 mx-auto text-center">
+          <img src="img/bolty-f2.png" alt="bolty" width="512" class="img-fluid mt-3">
+          <h3 class="mt-3 display-6">We Make Your Car Services<br>Easy & Hassle-Free.</h3>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="container my-5" id="content">
-    <div class="row">
-      <div class="col-md-8 mx-auto">
-        <div class="mt-5 p-5 text-white" style="background: rgb(255,92,0);
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-12 text-center mb-4">
+          <h2>Reasons to choose <strong>Bolty</strong></h2>
+        </div>
+
+        <div class="col-sm-12 col-md-3 mb-4">
+          <div class="card shadow">
+            <div class="card-body text-center">
+              <img src="img/estimation.png" alt="estimation" width="64" class="mb-4">
+              <h5 class="card-title fw-bold">Service Estimations</h5>
+              <p class="card-text">You get all the service estimations before the service.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-3 mb-4">
+          <div class="card shadow">
+            <div class="card-body text-center">
+              <img src="img/schedule.png" alt="schedule" width="64" class="mb-4">
+              <h5 class="card-title fw-bold">Time Slots</h5>
+              <p class="card-text">Choose your own time and date for the services.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-3 mb-4">
+          <div class="card shadow">
+            <div class="card-body text-center">
+              <img src="img/location.png" alt="location" width="64" class="mb-4">
+              <h5 class="card-title fw-bold">PickUp & Drop</h5>
+              <p class="card-text">Free pickup and drop is arranged as per the request.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-3 mb-4">
+          <div class="card shadow">
+            <div class="card-body text-center">
+              <img src="img/notification.png" alt="notification" width="64" class="mb-4">
+              <h5 class="card-title fw-bold">Timely Updates</h5>
+              <p class="card-text">We will give all the service updates happening in garage.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 text-center my-5">
+          <img src="/img/approved.png" alt="approved" width="64">
+          <h4 class="mt-3">Bolty engineer's verified & approved services!</h4>
+          <p class="badge bg-danger">Coming Soon</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-5" id="content">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <div class="mt-5 p-5 text-white" style="background: rgb(255,92,0);
           background: linear-gradient(238deg, rgba(255,92,0,1) 0%, rgba(129,0,166,1) 100%);">
-          <h5 class="mb-0 mt-4">We want you to have a</h5>
-          <h1>Convenient and hassle-free service experience.</h1>
+            <!-- <h5 class="mb-0 mt-4">We want you to have a</h5> -->
+            <h1>Get convenient, transparent <br>and hassle-free service experience <br> with BOLTY.</h1>
 
-          <h5 class="mt-5 mb-0">That's why we are building</h5>
-          <h1 class="fw-bold">BOLTY</h1>
+            <!-- <h5 class="mt-5 mb-0">That's why we have started</h5> -->
+            <!-- <h1 class="fw-bold">BOLTY</h1> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-12 text-center">
+          <img src="img/serviceprovider.png" alt="service provider" width="128">
+          <h5  class="mt-3 mb-0 display-6">Your car is in safe hands!</h5>
+          <h4>We handpick our service partners who have 10+ years of experience.</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-5">
+      <div class="row border border-2 rounded p-5 bg-white">
+        <div class="col-12 text-center mb-3">
+          <h2 class="mb-0">Book Your Service</h2>
+          <p>You can select all the services you need.</p>
         </div>
 
-        <div class="row my-5">
-          <div class="col-12 text-center">
+        <form name="interest" method="POST" data-netlify="true" action="/success" class="row">
+          <div class="col-sm-12 col-md-3 d-flex align-items-center mb-4">
+            <div class="card card-body shadow">
+              <div class="form-check">
+                <input class="form-check-input border border-primary border-2" type="checkbox" value="Periodic Maintenance" id="periodicMaintenance" name="serviceItem">
+                <label class="form-check-label" for="periodicMaintenance">
+                  Periodic Maintenance
+                </label>
+              </div>
+
+              <div class="accordion mt-3" id="periodicMaintenanceAccordion">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flushCollapsePeriodicMaintenance" aria-expanded="false" aria-controls="flushCollapsePeriodicMaintenance">
+                      Service Details
+                    </button>
+                  </h2>
+                  <div id="flushCollapsePeriodicMaintenance" class="accordion-collapse collapse"
+                    data-bs-parent="#periodicMaintenanceAccordion">
+                    <div class="accordion-body">
+                      <ul>
+                        <li>Car Wash & Interior Cleaning</li>
+                        <li>Engine Oil Change</li>
+                        <li>Air Filter Change</li>
+                        <li>Coolant Change</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-3 d-flex align-items-center mb-4">
+            <div class="card card-body shadow">
+              <div class="form-check">
+                <input class="form-check-input border border-primary border-2" type="checkbox" value="Denting & Painting" id="dentingAndPainting" name="serviceItem">
+                <label class="form-check-label" for="dentingAndPainting">
+                  Denting & Painting
+                </label>
+              </div>
+
+              <div class="accordion mt-3" id="dentingAndPaintingAccordion">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flushCollapseDentingAndPainting" aria-expanded="false" aria-controls="flushCollapseDentingAndPainting">
+                      Service Details
+                    </button>
+                  </h2>
+                  <div id="flushCollapseDentingAndPainting" class="accordion-collapse collapse"
+                    data-bs-parent="#dentingAndPaintingAccordion">
+                    <div class="accordion-body">
+                      <ul>
+                        <li>Denting</li>
+                        <li>Painting</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-3 d-flex align-items-center mb-4">
+            <div class="card card-body shadow">
+              <div class="form-check">
+                <input class="form-check-input border border-primary border-2" type="checkbox" value="Wheel Care" id="wheelCare" name="serviceItem">
+                <label class="form-check-label" for="wheelCare">
+                  Wheel Care
+                </label>
+              </div>
+
+              <div class="accordion mt-3" id="wheelCareAccordion">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flushCollapseWheelCare" aria-expanded="false" aria-controls="flushCollapseWheelCare">
+                      Service Details
+                    </button>
+                  </h2>
+                  <div id="flushCollapseWheelCare" class="accordion-collapse collapse" data-bs-parent="#wheelCareAccordion">
+                    <div class="accordion-body">
+                      <ul>
+                        <li>Wheel Alignment</li>
+                        <li>Wheel Balancing</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-3 d-flex align-items-center mb-4">
+            <div class="card card-body shadow">
+              <div>
+                <label for="otherRepair" class="form-label">Other Repairs/Services</label>
+                <textarea class="form-control border border-primary border-2" id="otherRepair" rows="2" placeholder="Write here" name="repairs-or-services"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-3 d-flex align-items-center mb-4">
+            <div class="card card-body shadow">
+              <div>
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-3 d-flex align-items-center mb-4">
+            <div class="card card-body shadow">
+              <div>
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="number" class="form-control" id="phone" name="phone" required>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 mt-4 text-center">
+            <button type="submit" class="btn btn-dark">Book Services Now</button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 mb-4 d-flex align-items-center">
+          <div class="shadow bg-white p-4 w-100">
+            <h3 class="fw-bold mb-0">Contact</h3>
+            <hr>
+            <h4>+91 9963017273</h4>
+            <div class="mt-3 d-flex justify-content-between">
+              <a href="tel:+919963017273">Call Now</a>
+              <a href="wa.me/919963017273">Chat On WhatsApp</a>
+            </div>
+            <p class="mt-5">Operating from CIE, IIITH, Gachibowli, Hyderabad.</p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 mb-4 d-flex align-items-center">
+          <div class="shadow bg-white p-4 w-100">
             <h3 class="fw-bold mb-0">Team</h3>
-            <p>Operating from CIE, IIITH, Gachibowli, Hyderabad.</p>
             <hr>
             <h4 class="fw-bold mb-0">Hemanth Veligatla</h4>
             <small>Co-Founder & CEO.</small>
@@ -226,20 +302,26 @@
             <h4 class="fw-bold mb-0 mt-5">Ravi Teja Veligatla</h4>
             <small>Co-Founder & CTO.</small>
 
-
-            <div class="mt-5">
-              A product of <a href="https://prasanta.business" target="_bla
-                ">Prasanta Communications</a>
-            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-    crossorigin="anonymous"></script>
-</body>
+    <div class="container my-5">
+      <div class="row my-5">
+        <div class="col-12 text-center">
+          <div class="mt-5">
+            A product of <a href="https://prasanta.business" target="_bla
+            ">Prasanta Communications</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+
+  </body>
 
 </html>
